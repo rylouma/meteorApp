@@ -1,0 +1,263 @@
+/***************************/
+/**********CLEARFIX**********/
+/***************************/
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 1;
+}
+
+@font-face {
+  font-family: 'allStar';
+  src: url('/allStar.ttf');
+}
+
+@font-face {
+  font-family: 'HP';
+  src: url('/HarryPotter7.ttf');
+}
+
+@font-face {
+  font-family: 'hermioneFont';
+  src: url('/hermioneFont.ttf');
+}
+
+@font-face {
+  font-family: 'niffleur';
+  src: url('/niffleur.otf');
+}
+
+body{
+  background-color: #e3dede;
+}
+
+ul{
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+li{
+  list-style: none;
+  font-family: 'hermioneFont';
+}
+
+button{
+  cursor: pointer;
+}
+
+
+input{
+  outline: none;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: 'HP';
+}
+/*********************/
+h2{
+  text-align: center;
+  font-family: 'allStar';
+  font-size: 35px;
+  margin: 0;
+}
+
+.gryffondor h2{
+  color: #4D0506;
+}
+
+.poufsouffle h2{
+  color: #0C0D08;
+}
+
+.serdaigle h2{
+  color: #0B304A;
+}
+
+.serpentard h2{
+  color: #25581F;
+}
+/*********************/
+button{
+  width: auto;
+  height: 30px;
+  background: black;
+  color: white;
+  outline: none;
+  border: none;
+}
+button:hover{
+  background: deeppink;
+}
+.input_update{
+  display: none;
+
+}
+
+.input_update_accept{
+  display: none;
+}
+
+/****************/
+.nom_eleve{
+  width: 80%;
+  height: 20px;
+  margin: 10px auto 0;
+  display: block;
+  border: 2px solid;
+}
+
+.gryffondor .nom_eleve{
+  border-color: #4D0506;
+}
+
+.poufsouffle .nom_eleve{
+  border-color: #F3DE0B;
+}
+
+.serdaigle .nom_eleve{
+  border-color: #0B304A;
+}
+
+.serpentard .nom_eleve{
+  border-color: #25581F;
+}
+/**********************/
+.add_eleve{
+  width: 50%;
+  margin: 10px auto 0;
+  display: block;
+  text-transform: uppercase;
+}
+
+.gryffondor .add_eleve,
+.gryffondor .delete_eleve,
+.gryffondor .spell{
+  background-color: #4D0506;
+  color:#F3BF1B;
+}
+
+.poufsouffle .add_eleve,
+.poufsouffle .delete_eleve,
+.poufsouffle .spell{
+  background-color: #F3DE0B;
+  color: #0C0D08;
+}
+
+.serdaigle .add_eleve,
+.serdaigle .delete_eleve,
+.serdaigle .spell{
+  background-color: #0B304A;
+  color: #9E9996;
+}
+
+.serpentard .add_eleve,
+.serpentard .delete_eleve,
+.serpentard .spell{
+  background-color: #25581F;
+  color: #9E9996;
+}
+
+/**********************/
+.delete_eleve{
+  width: 40%;
+  float: right;
+  height: 20px;
+}
+
+.spell{
+  width: 40%;
+  float: left;
+  height: 20px;
+}
+
+.gryffondor .add_eleve:hover,
+.gryffondor .delete_eleve:hover,
+.gryffondor .spell:hover{
+  background-color: #F3BF1B;
+  color:#4D0506;
+}
+
+.poufsouffle .add_eleve:hover,
+.poufsouffle .delete_eleve:hover,
+.poufsouffle .spell:hover{
+  background-color: #0C0D08;
+  color: #F3DE0B;
+}
+
+.serdaigle .add_eleve:hover,
+.serdaigle .delete_eleve:hover,
+.serdaigle .spell:hover{
+  background-color: #9E9996;
+  color: #0B304A;
+}
+
+.serpentard .add_eleve:hover,
+.serpentard .delete_eleve:hover,
+.serpentard .spell:hover{
+  background-color: #9E9996;
+  color: #25581F;
+}
+
+/**********************/
+.eleve_li{
+  margin-top: 30px;
+  border-top: 2px solid;
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+.eleve_li:first-child{
+  margin-top: 0;
+  border-top: 0;
+}
+
+.gryffondor .eleve_li{
+  color: #4D0506;
+}
+.poufsouffle .eleve_li{
+  color: black;
+}
+.serdaigle .eleve_li{
+  color: #0B304A;
+}
+.serpentard .eleve_li{
+  color: #25581F;
+}
+/**********************/
+.maison{
+  width: 25%;
+  float: left;
+}
+
+.maison img{
+  max-width: 217px;
+  margin: 0 auto;
+  display: block;
+}
+
+.content-img{
+  height: 260px;
+  padding-bottom: 20px;
+}
+/*******************/
+.input_spell{
+  display: none;
+}
+
+
+/*******************/
+.spell_li{
+  text-align: right;
+  font-size: 14px;
+  font-family: 'niffleur';
+}

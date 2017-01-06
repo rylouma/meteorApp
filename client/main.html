@@ -1,0 +1,99 @@
+<head>
+  <title>Hogwarts Alumnis</title>
+</head>
+
+<body class="cf">
+  <h1>Welcome to Hogwarts</h1>
+
+  <div class="maison gryffondor">
+    <div class="content-img">
+      <img src="/gryffindor.png" alt="">
+    </div>
+    <h2>Gryffindor</h2>
+    {{> gryffondor}}
+  </div>
+  <div class="maison poufsouffle">
+    <div class="content-img">
+      <img src="/hufflepuff.png" alt="">
+    </div>
+    <h2>Hufflepuff</h2>
+    {{> poufsouffle}}
+  </div>
+  <div class="maison serdaigle">
+    <div class="content-img">
+      <img src="/ravenclaw.png" alt="">
+    </div>
+    <h2>Ravenclaw</h2>
+    {{> serdaigle}}
+  </div>
+  <div class="maison serpentard">
+    <div class="content-img">
+      <img src="/slytherin.png" alt="">
+    </div>
+    <h2>Slytherin</h2>
+    {{> serpentard}}
+  </div>
+</body>
+
+<template name="gryffondor">
+    <input type="text" name="generetaeur" class="nom_eleve" placeholder="Harry Potter">
+    <button type="button" name="generetaeur" class="add_eleve">New student</button>
+  <ul class="cf">
+      {{#each toutlemonde}}
+        <li class="eleve_li">
+          &bull; {{name}}
+          <ul>
+              {{#each sortilege}}
+                <li class="spell_li">{{spell}}</li>
+              {{/each}}
+          </ul>
+        </li>
+          <input type="text" class="input_update" >
+          <button type="button" class="input_update_accept" value="">modif</button>
+          <button type="button" class="spell">Get a spell ?</button>
+          <button type="button" class="delete_eleve">Delete</button>
+      {{/each}}
+  </ul>
+</template>
+
+<template name="poufsouffle">
+    <input type="text" name="generetaeur" class="nom_eleve" placeholder="Cedric Diggory">
+    <button type="button" name="generetaeur" class="add_eleve">New student</button>
+  <ul class="cf">
+      {{#each toutlemonde}}
+        <li class="eleve_li">&bull; {{name}}</li>
+          <input type="text" class="input_update" >
+          <button type="button" class="input_update_accept" value="">modif</button>
+          <button type="button" class="spell">Get a spell ?</button>
+          <button type="button" class="delete_eleve">Delete</button>
+      {{/each}}
+  </ul>
+</template>
+
+<template name="serdaigle">
+    <input type="text" name="generetaeur" class="nom_eleve" placeholder="Cho Chang">
+    <button type="button" name="generetaeur" class="add_eleve">New student</button>
+  <ul class="cf">
+      {{#each toutlemonde}}
+        <li class="eleve_li">&bull; {{name}}</li>
+          <input type="text" class="input_update" >
+          <button type="button" class="input_update_accept" value="">modif</button>
+          <button type="button" class="spell">Get a spell ?</button>
+          <button type="button" class="delete_eleve">Delete</button>
+      {{/each}}
+  </ul>
+</template>
+
+<template name="serpentard">
+    <input type="text" name="generetaeur" class="nom_eleve" placeholder="Drago Malefoy">
+    <button type="button" name="generetaeur" class="add_eleve">New student</button>
+  <ul class="cf">
+      {{#each toutlemonde}}
+        <li class="eleve_li">&bull; {{name}}</li>
+          <input type="text" class="input_update" >
+          <button type="button" class="input_update_accept" value="">modif</button>
+          <button type="button" class="spell">Get a spell ?</button>
+          <button type="button" class="delete_eleve">Delete</button>
+      {{/each}}
+  </ul>
+</template>
